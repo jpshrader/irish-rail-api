@@ -22,11 +22,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+
 builder.Services.AddApiVersioning((config) => {
 	config.DefaultApiVersion = new ApiVersion(1, 0);
 	config.AssumeDefaultVersionWhenUnspecified = true;
 	config.ReportApiVersions = true;
 });
+
 builder.Services.AddSwaggerGen(c => {
 	c.SwaggerDoc("v1", new() {
 		Title = "Irish Rail Api",
@@ -34,6 +36,7 @@ builder.Services.AddSwaggerGen(c => {
 		Version = "v1"
 	});
 });
+
 builder.Services.AddCors(o => o.AddPolicy("CorsPolicy", builder => {
 	builder.AllowAnyOrigin()
 		.AllowAnyMethod()
