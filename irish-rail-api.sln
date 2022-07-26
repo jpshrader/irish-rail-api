@@ -1,18 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.31710.8
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "irish-rail-api", "irish-rail-api\irish-rail-api.csproj", "{12B6AA4F-E003-495E-9B9A-05EC8B789D89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "irish-rail-api", "irish-rail-api\irish-rail-api.csproj", "{76F27A42-0D17-4DAE-AFA6-F4512E4FD324}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8797D31F-3803-48FF-A9DF-98DCD3BBD76B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{91C1C45E-8412-4CBA-8E26-C9F8A8256FE5}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "irish-rail-api.tests", "irish-rail-api.tests\irish-rail-api.tests.csproj", "{C2514808-3A68-4AEF-8143-3E7EE4B52E6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "irish-rail-api.tests", "irish-rail-api.tests\irish-rail-api.tests.csproj", "{B7205A93-A0A8-4CA5-ACAE-E6220A40AAA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,19 +21,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{12B6AA4F-E003-495E-9B9A-05EC8B789D89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12B6AA4F-E003-495E-9B9A-05EC8B789D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{12B6AA4F-E003-495E-9B9A-05EC8B789D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{12B6AA4F-E003-495E-9B9A-05EC8B789D89}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C2514808-3A68-4AEF-8143-3E7EE4B52E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2514808-3A68-4AEF-8143-3E7EE4B52E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2514808-3A68-4AEF-8143-3E7EE4B52E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2514808-3A68-4AEF-8143-3E7EE4B52E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76F27A42-0D17-4DAE-AFA6-F4512E4FD324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F27A42-0D17-4DAE-AFA6-F4512E4FD324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F27A42-0D17-4DAE-AFA6-F4512E4FD324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F27A42-0D17-4DAE-AFA6-F4512E4FD324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7205A93-A0A8-4CA5-ACAE-E6220A40AAA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7205A93-A0A8-4CA5-ACAE-E6220A40AAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7205A93-A0A8-4CA5-ACAE-E6220A40AAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7205A93-A0A8-4CA5-ACAE-E6220A40AAA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F3B72671-2245-4ABD-86DD-FB8577EF3869}
+		SolutionGuid = {9E4AC36E-4970-44A7-B117-EFA73A0A94AF}
 	EndGlobalSection
 EndGlobal

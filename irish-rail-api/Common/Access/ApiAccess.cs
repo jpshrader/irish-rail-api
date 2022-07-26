@@ -24,7 +24,7 @@ namespace irish_rail_api.Common.Access {
 				return result ?? Enumerable.Empty<T>();
 			}
 
-			throw new ApiErrorException(response.StatusCode, response.Content.ReadAsStringAsync().Result);
+			throw new ApiError(response.StatusCode, response.Content.ReadAsStringAsync().Result);
 		}
 	}
 }
