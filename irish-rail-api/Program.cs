@@ -19,6 +19,7 @@ using irish_rail_api.Trains.Data;
 using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
+var corsPolicy = "CorsPolicy";
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -37,7 +38,7 @@ builder.Services.AddSwaggerGen(c => {
 	});
 });
 
-builder.Services.AddCors(o => o.AddPolicy("CorsPolicy", builder => {
+builder.Services.AddCors(o => o.AddPolicy(corsPolicy, builder => {
 	builder.AllowAnyOrigin()
 		.AllowAnyMethod()
 		.AllowAnyHeader();
@@ -69,6 +70,8 @@ var app = builder.Build();
 var isDev = app.Environment.IsDevelopment();
 if (isDev)
 	app.UseDeveloperExceptionPage();
+
+app.UseCors(corsPolicy);
 
 // Add Swagger
 var swaggerUrlPrefix = isDev ? string.Empty : "/rail-api";
