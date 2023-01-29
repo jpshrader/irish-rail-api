@@ -5,7 +5,7 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
-			"VARIANT": "6.0"
+			"VARIANT": "7.0"
 		}
 	},
 
@@ -29,7 +29,7 @@
 	// Use 'portsAttributes' to set default properties for specific forwarded ports. More info: https://code.visualstudio.com/docs/remote/devcontainerjson-reference.
 	"portsAttributes": {
 		"5000": {
-			"label": "Hello Remote World",
+			"label": "irish-rail-api",
 			"onAutoForward": "notify"
 		}
 	},
