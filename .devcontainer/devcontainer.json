@@ -5,7 +5,9 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
-			"VARIANT": "7.0"
+			"VARIANT": "7.0-bullseye-slim",
+			// Options
+			"NODE_VERSION": "none"
 		}
 	},
 
@@ -18,7 +20,7 @@
 
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"ms-dotnettools.csharp"
+				"ms-dotnettools.csdevkit"
 			]
 		}
 	},
